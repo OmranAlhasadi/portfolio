@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 2px 3px;
+    align-items: center;
+    color: white; /* Set arrow and text color here */
+}
+
+.text {
+    font-size: 22px;
+}
+
+.arrow {
+    transition: transform 0.2s ease-in-out;
+}
+
+.container:hover .arrow {
+    transform: rotate(45deg);
+}

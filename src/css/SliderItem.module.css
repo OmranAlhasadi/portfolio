@@ -1,0 +1,41 @@
+/* sliderItem.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+    width: 100px; /* Adjust to your liking */
+    height: 100px; /* Adjust to your liking */
+    border-style: dotted;
+    border-color: #fff; /* Change color to white */
+    border-width: 1px;
+    padding: 10px;
+}
+
+
+/* sliderItem.css */
+.icon {
+    font-size: 4em; /* Adjust the size to your liking */
+    color: #61dafb; /* Adjust color to your liking */
+}
+
+/* sliderItem.css */
+.name {
+    font-size: 1rem;
+    color: #fff; /* Change color to white */
+}
+
+
+.text{
+    font-size: 1rem;
+}
+
+/* sliderItem.css */
+.num {
+    font-size: 0.8rem;
+    position: absolute;
+    right: 2px; /* Adjust the positioning to your liking */
+    bottom: 2px; /* Adjust the positioning to your liking */
+    color: #fff; /* Change color to white */
+}

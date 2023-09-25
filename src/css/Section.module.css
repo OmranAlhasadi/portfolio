@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    max-width: 90%;
+    padding: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.titleContainer{
+    display: flex;
+    align-items: baseline;
+    
+    
+    
+    margin-bottom: 30px;
+}
+
+.num{
+    
+    font-size: 18px;
+    
+}
+
+
+
+.title{
+    color: white;
+    
+    font-size: 38px;
+    
+    
+}
+
+.container > div{
+    color: white;
+    
+    font-size: 24px;
+    padding: 0;
+}
+
+.container > p{
+    color: var(--color-text-primary);
+    font-size: 22px;
+    
+    
+}

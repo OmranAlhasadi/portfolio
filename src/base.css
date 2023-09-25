@@ -1,0 +1,38 @@
+:root {
+    /* Font variables */
+    --font-primary: 'Open Sans', sans-serif;
+    --font-display: 'Sora', sans-serif;
+  
+    /* Light mode color variables */
+    --color-text-primary: #2c2c2c;
+    --color-text-secondary: #ffffff;
+    --color-link: #0000af;
+    
+    --color-bg-main: #fff;
+    --color-bg-secondary: #242424;
+    
+    --color-accent: #f9f366;
+    
+    --color-divider: rgba(255, 255, 255, 0.457);
+    --color-blog-highlight: #ffffff23;
+    
+    --color-project-bg: #fff;
+  }
+  
+  .dark {
+    /* Dark mode color variables */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #2c2c2c;
+    --color-link: #a3a3ff;
+  
+    --color-bg-main: #242424;
+    --color-bg-secondary: #fff;
+  
+    --color-accent: #696500;
+  
+    --color-divider: #40404076;
+    --color-blog-highlight: #40404023;
+  
+    --color-project-bg: #151515;
+  }
+  
