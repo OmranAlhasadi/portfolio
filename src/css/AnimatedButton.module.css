@@ -4,11 +4,19 @@
     padding: 2px 3px;
     align-items: center;
     color: white; /* Set arrow and text color here */
+    overflow: hidden;
+    
 }
 
 .text {
     font-size: 22px;
+    
+    text-shadow: 0 22px 0 white;
+    transition: transform 0.2s ease-in-out;
+    
 }
+
+
 
 .arrow {
     transition: transform 0.2s ease-in-out;
@@ -16,4 +24,8 @@
 
 .container:hover .arrow {
     transform: rotate(45deg);
+}
+
+.container:hover .text {
+    transform: translateY(-100%);
 }

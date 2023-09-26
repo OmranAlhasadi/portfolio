@@ -1,28 +1,13 @@
-import styles from "../css/HomePage.module.css";
-import { useEffect } from "react";
-import Section from "../components/Section";
-import Hero from "../components/Hero";
-import Slider from "../components/Slider";
-import ProjectInfo from "../components/ProjectInfo";
-import Divider from "../components/Divider";
-import Projects from "../components/Projects";
+import styles from "../css/Projects.module.css";
+import Project from "./Project";
 
-const HomePage = () => {
-  useEffect(() => {
-    document.body.classList.add("dark");
+import easyGains from "../images/easyGains2.jpeg";
+import etch from "../images/etch2.png";
 
-    return () => {
-      // Remove the class if needed when the component unmounts
-      document.body.classList.remove("dark");
-    };
-  }, []);
-
+const Projects = () => {
   return (
-    <div className={styles.pageContainer}>
-      <Hero />
-      <Divider />
-      <Section num={"01."} title={"About"}>
-        <div>wooooooooooooooooooooo</div>
+    <div className={styles.container}>
+      <Project img={easyGains} title="EasyGains">
         <p>
           Growing up, I always had an affinity for everything tech related.
           Jailbreaking my first iPod, installing custom ROMs on my android
@@ -34,9 +19,8 @@ const HomePage = () => {
           implementing eye pleasing designs and making them come to life with
           animation is what I do best.
         </p>
-      </Section>
-      <Slider />
-      <ProjectInfo title={"EasyGains"}>
+      </Project>
+      <Project img={etch} title="Etch-a-Sketch">
         <p>
           Growing up, I always had an affinity for everything tech related.
           Jailbreaking my first iPod, installing custom ROMs on my android
@@ -48,10 +32,22 @@ const HomePage = () => {
           implementing eye pleasing designs and making them come to life with
           animation is what I do best.
         </p>
-      </ProjectInfo>
-      <Projects />
+      </Project>
+      <Project img={easyGains} title="EasyGains 2">
+        <p>
+          Growing up, I always had an affinity for everything tech related.
+          Jailbreaking my first iPod, installing custom ROMs on my android
+          phones (and nearly bricking them) or modding my gaming consoles were
+          some of the things that developed my problem solving skills
+        </p>
+        <p>
+          Today I'm enthralled by web development. Creating new experiences,
+          implementing eye pleasing designs and making them come to life with
+          animation is what I do best.
+        </p>
+      </Project>
     </div>
   );
 };
 
-export default HomePage;
+export default Projects;
