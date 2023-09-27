@@ -19,15 +19,26 @@
 .infoContainer{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     background-color: var(--color-project-bg);
     max-width: 100%;
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 p{
+    
     color: var(--color-text-primary);
-    font-size: 22px;   
+    font-size: 1.4rem;   
+    
+}
+
+i{
+    color: var(--color-text-primary);
+    font-size: 1.2rem;   
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
 }
 
 .buttonsContainer{

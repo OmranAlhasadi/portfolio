@@ -18,8 +18,8 @@
 
 .shadow {
     position: absolute;
-    transform: translate3d(0px, -0.5331%, 0px);
-    top: 1%;
+    
+    top: -10%;
     left: 1%;
     width: 440px;
     height: 440px;
@@ -43,6 +43,7 @@
 
 .info {
     position: absolute;
+    top:50%;
     right: 0;
     z-index: 100;
 }

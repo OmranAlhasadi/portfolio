@@ -3,6 +3,7 @@ import Project from "./Project";
 
 import easyGains from "../images/easyGains2.jpeg";
 import etch from "../images/etch2.png";
+import Divider from "./Divider";
 
 const Projects = () => {
   return (
@@ -19,6 +20,8 @@ const Projects = () => {
           implementing eye pleasing designs and making them come to life with
           animation is what I do best.
         </p>
+        <Divider />
+        <i>Built using Python, Dart and firebase</i>
       </Project>
       <Project img={etch} title="Etch-a-Sketch">
         <p>

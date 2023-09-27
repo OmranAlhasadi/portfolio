@@ -5,7 +5,7 @@ import SwiperCore from "swiper/core";
 import "swiper/swiper-bundle.css";
 import SliderItem from "./SliderItem";
 
-import icons from "devicon";
+import icons from "devicon"; //important
 
 const techData = [
   { name: "JavaScript", icon: "devicon-javascript-plain colored" },
@@ -42,10 +42,6 @@ function Slider() {
         }}
         navigation
         freeMode={true}
-        freeModeMomentum={true}
-        momentumBounce={false}
-        momentumRatio={2}
-        momentumVelocityRatio={3}
         speed={300}
       >
         {techData.map((tech, index) => (

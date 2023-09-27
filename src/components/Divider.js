@@ -24,7 +24,7 @@ Divider.defaultProps = {
   color: "#fff",
   thickness: 1,
   margin: "0px 0",
-  width: "70%",
+  width: "100%",
 };
 
 export default Divider;
