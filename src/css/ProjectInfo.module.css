@@ -11,9 +11,15 @@
     background-color: var(--color-accent);
     
     padding: 8px 15px;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     align-self: flex-start;
     display: inline-block;
+}
+
+.alternateTitle {
+    align-self: flex-end;
+    margin-left: 0px;
+    margin-right: 1.25rem;
 }
 
 .infoContainer{

@@ -23,7 +23,7 @@ const Projects = () => {
         <Divider />
         <i>Built using Python, Dart and firebase</i>
       </Project>
-      <Project img={etch} title="Etch-a-Sketch">
+      <Project img={etch} title="Etch-a-Sketch" alternate={true}>
         <p>
           Growing up, I always had an affinity for everything tech related.
           Jailbreaking my first iPod, installing custom ROMs on my android

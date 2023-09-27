@@ -8,6 +8,7 @@ import Divider from "../components/Divider";
 import Projects from "../components/Projects";
 
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
+import Contact from "../components/Contact";
 
 const HomePage = () => {
   useEffect(() => {
@@ -45,11 +46,19 @@ const HomePage = () => {
         <Slider />
         <Section num={"02."} title={"Projects"}>
           <p>
-            These are past projects I made that I pourred my herat and soul into
+            These are past projects I made that I poured my heart and soul into
           </p>
         </Section>
 
         <Projects />
+        <Section num={"03."} title={"Contact Me"}>
+          <p>
+            I am always looking for new opportunities so please feel free to
+            contact me at <strong>omranelhasadi@gmail.com</strong> or use The
+            form below:
+          </p>
+        </Section>
+        <Contact />
       </div>
     </ReactLenis>
   );

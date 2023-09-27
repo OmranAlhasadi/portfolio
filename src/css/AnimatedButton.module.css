@@ -9,9 +9,9 @@
 }
 
 .text {
-    font-size: 22px;
+    font-size: 1.25rem;
     
-    text-shadow: 0 22px 0 white;
+    text-shadow: 0 1.25rem 0 white;
     transition: transform 0.2s ease-in-out;
     
 }

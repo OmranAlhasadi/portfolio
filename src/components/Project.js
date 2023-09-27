@@ -6,7 +6,7 @@ import ProjectInfo from "./ProjectInfo";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Project = ({ img, title, children }) => {
+const Project = ({ img, title, children, alternate }) => {
   const containerRef = useRef(null);
   const shadowRef = useRef(null);
   const infoRef = useRef(null);
@@ -32,7 +32,7 @@ const Project = ({ img, title, children }) => {
         ease: "none",
       },
       0
-    ); // 0 ensures that both tweens will start at the same time.
+    );
 
     return () => {
       tl.scrollTrigger.kill();
@@ -42,13 +42,25 @@ const Project = ({ img, title, children }) => {
   return (
     <div className={styles.container} ref={containerRef}>
       <div className={styles.innerWrapper}>
-        <div className={styles.shadow} ref={shadowRef}></div>
         <div
-          className={styles.image}
+          className={`${styles.shadow} ${
+            alternate ? styles.alternateShadow : ""
+          }`}
+          ref={shadowRef}
+        ></div>
+        <div
+          className={`${styles.image} ${
+            alternate ? styles.alternateImage : ""
+          }`}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
-        <div className={styles.info} ref={infoRef}>
-          <ProjectInfo title={title}>{children}</ProjectInfo>
+        <div
+          className={`${styles.info} ${alternate ? styles.alternateInfo : ""}`}
+          ref={infoRef}
+        >
+          <ProjectInfo title={title} alternate={alternate}>
+            {children}
+          </ProjectInfo>
         </div>
       </div>
     </div>
