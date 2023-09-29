@@ -18,6 +18,8 @@
   
   --color-project-bg: #fff;
 
+  --color-overlay: transparent;
+
 
 
   font-family: var(--font-primary);
@@ -38,6 +40,8 @@
   --color-blog-highlight: #40404023;
 
   --color-project-bg: #151515;
+
+  --color-overlay: #242424;
 }
 
 

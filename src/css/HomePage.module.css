@@ -1,14 +1,32 @@
 body {
-    background-color: var(--color-bg-main);
+    background-color: var(--color-accent);
     
     
 }
 
 
 .pageContainer{
-    background-color: var(--color-bg-main);
+    background-color: var(--color-accent);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
+}
+
+.contentContainer {
+    background-color: var(--color-bg-main);
+    transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 12rem;
+}
+
+.contentWrapper{
+    
+    transition: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
 }

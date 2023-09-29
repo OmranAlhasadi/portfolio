@@ -4,6 +4,7 @@ import Project from "./Project";
 import easyGains from "../images/easyGains2.jpeg";
 import etch from "../images/etch2.png";
 import Divider from "./Divider";
+import Section from "./Section";
 
 const Projects = () => {
   return (

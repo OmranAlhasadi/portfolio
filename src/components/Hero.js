@@ -12,6 +12,16 @@ const Hero = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.overlay}>
+        <svg
+          viewBox="0 0 361 429"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMinYMin meet"
+        >
+          <rect width="100%" height="100%" fill="currentColor" opacity="0.8" />
+        </svg>
+      </div>
+
       <div className={styles.div1}>
         <span
           style={

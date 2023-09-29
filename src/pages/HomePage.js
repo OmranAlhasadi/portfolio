@@ -1,59 +1,58 @@
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "../css/HomePage.module.css";
-import { useEffect } from "react";
-import Section from "../components/Section";
-import Hero from "../components/Hero";
-import Slider from "../components/Slider";
-
-import Divider from "../components/Divider";
-import Projects from "../components/Projects";
-
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Top from "../sections/Top";
+import Middle from "../sections/Middle";
+import Bottom from "../sections/Bottom";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
   const lenis = useLenis(({ scroll }) => {
     // called every scroll
   });
 
+  const pageContainerRef = useRef(null);
+  const contentContainerRef = useRef(null);
+  const middleRef = useRef(null);
+  const bottomRef = useRef(null);
+
+  useEffect(() => {
+    ScrollTrigger.create({
+      trigger: middleRef.current,
+      start: "top center",
+      end: "bottom center",
+      onEnter: () => contentContainerRef.current.classList.add("dark"),
+      onLeaveBack: () => contentContainerRef.current.classList.remove("dark"),
+    });
+
+    gsap.to(contentContainerRef.current, {
+      width: "90%",
+      scrollTrigger: {
+        trigger: bottomRef.current,
+        start: "top bottom",
+        end: "bottom bottom",
+        scrub: true,
+      },
+    });
+  }, []);
+
   return (
     <ReactLenis root autoRaf={true}>
-      <div className={styles.pageContainer}>
-        <Header />
-        <Hero />
-        <Divider />
-        <Section num={"01."} title={"About"}>
-          <div>wooooooooooooooooooooo</div>
-          <p>
-            Growing up, I always had an affinity for everything tech related.
-            Jailbreaking my first iPod, installing custom ROMs on my android
-            phones (and nearly bricking them) or modding my gaming consoles were
-            some of the things that developed my problem solving skills
-          </p>
-          <p>
-            Today I'm enthralled by web development. Creating new experiences,
-            implementing eye pleasing designs and making them come to life with
-            animation is what I do best.
-          </p>
-        </Section>
-        <Slider />
-        <Section num={"02."} title={"Projects"}>
-          <p>
-            These are past projects I made that I poured my heart and soul into
-          </p>
-        </Section>
-
-        <Projects />
-        <Section num={"03."} title={"Contact Me"}>
-          <p>
-            I am always looking for new opportunities so please feel free to
-            contact me at <strong>omranelhasadi@gmail.com</strong> or use The
-            form below:
-          </p>
-        </Section>
-        <Contact />
-        <Footer />
+      <div className={styles.pageContainer} ref={pageContainerRef}>
+        <div className={styles.contentContainer} ref={contentContainerRef}>
+          <div className={styles.contentWrapper}>
+            <Top />
+            <div ref={middleRef}>
+              <Middle />
+            </div>
+          </div>
+        </div>
+        <div ref={bottomRef}>
+          <Bottom />
+        </div>
       </div>
     </ReactLenis>
   );
