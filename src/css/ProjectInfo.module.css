@@ -3,17 +3,21 @@
     flex-direction: column;
 
     max-width: 700px;
+    transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
+    
 }
 
 .title {
     font-size: 24px;
-    color: white;
+    color: var(--color-text-primary);
     background-color: var(--color-accent);
     
     padding: 8px 15px;
     margin-left: 1.25rem;
     align-self: flex-start;
     display: inline-block;
+    transition: inherit;
+    
 }
 
 .alternateTitle {
@@ -30,6 +34,7 @@
     background-color: var(--color-project-bg);
     max-width: 100%;
     padding: 2.5rem;
+    transition: inherit;
 }
 
 p{

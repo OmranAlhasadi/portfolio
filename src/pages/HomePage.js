@@ -9,17 +9,10 @@ import Projects from "../components/Projects";
 
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const HomePage = () => {
-  useEffect(() => {
-    document.body.classList.add("dark");
-
-    return () => {
-      // Remove the class when the component unmounts
-      document.body.classList.remove("dark");
-    };
-  }, []);
-
   const lenis = useLenis(({ scroll }) => {
     // called every scroll
   });
@@ -27,6 +20,7 @@ const HomePage = () => {
   return (
     <ReactLenis root autoRaf={true}>
       <div className={styles.pageContainer}>
+        <Header />
         <Hero />
         <Divider />
         <Section num={"01."} title={"About"}>
@@ -59,6 +53,7 @@ const HomePage = () => {
           </p>
         </Section>
         <Contact />
+        <Footer />
       </div>
     </ReactLenis>
   );

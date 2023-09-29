@@ -1,0 +1,21 @@
+.container {
+    position: fixed;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30rem;
+    z-index: 100000;
+
+}
+
+.spacer {
+    height: 8rem; 
+    width: 100%;
+}
+
+.logo {
+    height: 1px;
+    width: 1px;
+}

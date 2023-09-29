@@ -4,12 +4,23 @@
     grid-template-columns: repeat(10, 3rem);
     row-gap: 2rem;
     grid-template-rows: repeat(4, 3rem);
+    transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
+    
 }
 
 
 .icon1, .icon2 {
     font-size: 4em; 
-    color: #fff; 
+    color: var(--color-text-primary); 
+    transition: inherit;
+    
+
+}
+
+.icon1:hover, .icon2:hover {
+    
+    color: var(--color-text-secondary); 
+    cursor: pointer;
     
 
 }
@@ -34,10 +45,11 @@ form {
 .name, .email, .message {
     background: none;
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--color-text-primary);
     
     
-    border: 1px solid white;
+    border: 1px solid var(--color-text-primary);
+    transition: inherit;
 
 }
 

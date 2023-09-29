@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
 }
 
 .titleContainer{
@@ -18,18 +19,19 @@
 }
 
 .num{
-    
+    color: var(--color-text-primary);
     font-size: 18px;
+    transition: inherit;
     
 }
 
 
 
 .title{
-    color: white;
+    color: var(--color-text-primary);
     
     font-size: 38px;
-    
+    transition: inherit;
     
 }
 

@@ -1,0 +1,12 @@
+.container{
+    padding-top: 10rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.text{
+    color: var(--color-text-primary);
+    font-size: 1.2rem;
+}

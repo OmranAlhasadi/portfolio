@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 import styles from "../css/Divider.module.css";
 
-const Divider = ({ color, thickness, margin, width }) => {
+const Divider = ({ thickness, margin, width }) => {
   const style = {
-    borderBottom: `${thickness}px solid ${color}`,
+    borderBottom: `${thickness}px solid var(--divider-color, #fff)`,
     margin: margin,
     width: width,
   };
@@ -14,14 +14,12 @@ const Divider = ({ color, thickness, margin, width }) => {
 };
 
 Divider.propTypes = {
-  color: PropTypes.string,
   thickness: PropTypes.number,
   margin: PropTypes.string,
   width: PropTypes.string,
 };
 
 Divider.defaultProps = {
-  color: "#fff",
   thickness: 1,
   margin: "0px 0",
   width: "100%",
