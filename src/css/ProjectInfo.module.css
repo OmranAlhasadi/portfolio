@@ -1,7 +1,7 @@
 .container{
     display: flex;
     flex-direction: column;
-
+    width: 100%;
     max-width: 700px;
     transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
     
@@ -40,13 +40,15 @@
 p{
     
     color: var(--color-text-primary);
-    font-size: 1.4rem;   
+    font-size: 1.2rem;
+    line-height: 1.5;
+    
     
 }
 
 i{
     color: var(--color-text-primary);
-    font-size: 1.2rem;   
+    font-size: 1rem;   
     font-style: italic;
     margin-bottom: 1.5rem;
     align-self: flex-start;
@@ -56,4 +58,31 @@ i{
     display: flex;
     align-self: flex-end;
     gap: 10px;
+}
+
+@media (max-width: 1024px) {
+    .container{
+        max-width: 25rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 100%;
+    }
+
+    
+    .infoContainer{
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .buttonsContainer{
+        align-self: center;
+        width: 100%;
+        justify-content: space-between;
+    }
 }

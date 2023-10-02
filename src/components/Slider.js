@@ -29,7 +29,7 @@ function Slider() {
     <div className={styles.container}>
       <Swiper
         style={{
-          "--swiper-navigation-color": "#ffffff",
+          "--swiper-navigation-color": "var(--color-text-primary)",
           "--swiper-navigation-sides-offset": "0px",
         }}
         spaceBetween={1}

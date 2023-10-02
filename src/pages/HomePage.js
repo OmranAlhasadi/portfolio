@@ -42,10 +42,14 @@ const HomePage = () => {
   return (
     <ReactLenis root autoRaf={true}>
       <div className={styles.pageContainer} ref={pageContainerRef}>
-        <div className={styles.contentContainer} ref={contentContainerRef}>
+        <div
+          className={styles.contentContainer}
+          style={{ width: "100%" }}
+          ref={contentContainerRef}
+        >
           <div className={styles.contentWrapper}>
             <Top />
-            <div ref={middleRef}>
+            <div className={styles.middleContainer} ref={middleRef}>
               <Middle />
             </div>
           </div>

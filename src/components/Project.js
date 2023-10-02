@@ -18,7 +18,6 @@ const Project = ({ img, title, children, alternate }) => {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        markers: true,
       },
     });
 

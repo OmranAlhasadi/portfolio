@@ -14,7 +14,6 @@ const Top = () => {
       <Hero />
       <Divider />
       <Section num={"01."} title={"About"}>
-        <div>wooooooooooooooooooooo</div>
         <p>
           Growing up, I always had an affinity for everything tech related.
           Jailbreaking my first iPod, installing custom ROMs on my android

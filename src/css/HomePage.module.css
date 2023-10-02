@@ -11,6 +11,9 @@ body {
     flex-direction: column;
     align-items: center;
     transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
+    width: 100%;
+    gap: 2rem;
+    
 }
 
 .contentContainer {
@@ -18,6 +21,7 @@ body {
     transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
     padding-bottom: 12rem;
 }
@@ -29,4 +33,9 @@ body {
     flex-direction: column;
     align-items: center;
     width: 90%;
+    gap: 2rem;
+}
+
+.middleContainer {
+    width: 100%;
 }

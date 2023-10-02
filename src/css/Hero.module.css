@@ -1,6 +1,4 @@
-body {
-    overflow-x: hidden;
-}
+
 
 
 .container{
@@ -113,16 +111,16 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .div1 span, .div2 span, .div3 span, .div4 span {
         
-        font-size: 11vw;
-        height: 11vw;
+        font-size: 10vw;
+        height: 10vw;
     }
 
     .div1, .div2, .div3, .div4 {
         
-        height: 11vw;
+        height: 10vw;
     }
 
     .div1{
@@ -148,6 +146,22 @@ body {
     
 }
 
+
+
+@media (max-width: 450px) {
+    
+    .div1 span, .div2 span, .div3 span, .div4 span {
+        
+        font-size: 10vw;
+        height: 9vw;
+    }
+
+    .div1, .div2, .div3, .div4 {
+        
+        height: 9vw;
+    }
+
+}
 
 
 

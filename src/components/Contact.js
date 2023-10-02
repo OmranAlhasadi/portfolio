@@ -24,7 +24,9 @@ const Contact = () => {
           placeholder="Message..."
           className={styles.message}
         ></input>
-        <AnimatedButton text={"Send"} />
+        <div className={styles.buttonWrapper}>
+          <AnimatedButton text={"Send"} />
+        </div>
       </form>
     </div>
   );
