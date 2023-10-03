@@ -3,6 +3,7 @@ import Project from "./Project";
 
 import easyGains from "../images/easyGains2.jpeg";
 import etch from "../images/etch2.png";
+import rps from "../images/RPS.png";
 import Divider from "./Divider";
 import Section from "./Section";
 
@@ -11,15 +12,14 @@ const Projects = () => {
     <div className={styles.container}>
       <Project img={easyGains} title="EasyGains" noButtons={true}>
         <p>
-          Growing up, I always had an affinity for everything tech related.
-          Jailbreaking my first iPod, installing custom ROMs on my android
-          phones (and nearly bricking them) or modding my gaming consoles were
-          some of the things that developed my problem solving skills
+          EasyGains is a macronutrient and calories logger that is specifically
+          catered for Bodybuilders. It calculates how many calories and macros
+          you need in a day to bulk or cut depending on you body parameters and
+          goal.
         </p>
         <p>
-          Today I'm enthralled by web development. Creating new experiences,
-          implementing eye pleasing designs and making them come to life with
-          animation is what I do best.
+          it also uses AI so the user can log their food with the press of a
+          button by taking a picture instead of searching.
         </p>
         <Divider />
         <i>Built using Python, Dart and firebase</i>
@@ -28,38 +28,33 @@ const Projects = () => {
         img={etch}
         title="Etch-a-Sketch"
         alternate={true}
-        link1={"https://github.com/OmranAlhasadi"}
-        link2={"https://github.com/OmranAlhasadi"}
+        link1={"https://omranalhasadi.github.io/etch-a-sketch/"}
+        link2={"https://github.com/OmranAlhasadi/etch-a-sketch"}
       >
         <p>
-          Growing up, I always had an affinity for everything tech related.
-          Jailbreaking my first iPod, installing custom ROMs on my android
-          phones (and nearly bricking them) or modding my gaming consoles were
-          some of the things that developed my problem solving skills
+          A fun etch-a-sketch made using vanilla js when I was learning. you can
+          color, erase, reset, choose the grid dimensions and has a random
+          rainbow mode.{" "}
         </p>
         <p>
-          Today I'm enthralled by web development. Creating new experiences,
-          implementing eye pleasing designs and making them come to life with
-          animation is what I do best.
+          Please use google chrome when viewing it since I used chrome webkits
+          in styling it which will break in other browsers
         </p>
+        <Divider />
+        <i>Built using HTML, CSS, Javascript </i>
       </Project>
       <Project
-        img={easyGains}
-        title="EasyGains 2"
-        link1={"https://github.com/OmranAlhasadi"}
-        link2={"https://github.com/OmranAlhasadi"}
+        img={rps}
+        title="RPS"
+        link1={"https://omranalhasadi.github.io/rock-paper-scissors/"}
+        link2={"https://github.com/OmranAlhasadi/rock-paper-scissors"}
       >
         <p>
-          Growing up, I always had an affinity for everything tech related.
-          Jailbreaking my first iPod, installing custom ROMs on my android
-          phones (and nearly bricking them) or modding my gaming consoles were
-          some of the things that developed my problem solving skills
+          A Rock-Paper-Scissors game I made while learning vanilla JS. it is a
+          first to 5 wins against a random choice computer opponent
         </p>
-        <p>
-          Today I'm enthralled by web development. Creating new experiences,
-          implementing eye pleasing designs and making them come to life with
-          animation is what I do best.
-        </p>
+        <Divider />
+        <i>Built using HTML, CSS, Javascript </i>
       </Project>
     </div>
   );

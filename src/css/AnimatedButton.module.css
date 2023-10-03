@@ -50,14 +50,18 @@
 
 
 
+@media (min-width: 768px) {
+    
+    .container:hover .arrow {
+        transform: rotate(45deg);
+    }
+    
+    .container:hover .text {
+        transform: translateY(-125%);
+    }
+}
+
 .arrow {
     transition: transform 0.2s ease-in-out;
 }
 
-.container:hover .arrow {
-    transform: rotate(45deg);
-}
-
-.container:hover .text {
-    transform: translateY(-125%);
-}
