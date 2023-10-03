@@ -6,6 +6,7 @@ import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import Top from "../sections/Top";
 import Middle from "../sections/Middle";
 import Bottom from "../sections/Bottom";
+import Header from "../components/Header";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,7 +25,9 @@ const HomePage = () => {
       trigger: middleRef.current,
       start: "top center",
       end: "bottom center",
-      onEnter: () => contentContainerRef.current.classList.add("partialDark"),
+      onEnter: () => {
+        contentContainerRef.current.classList.add("partialDark");
+      },
       onLeaveBack: () =>
         contentContainerRef.current.classList.remove("partialDark"),
     });
@@ -44,6 +47,7 @@ const HomePage = () => {
   return (
     <ReactLenis root autoRaf={true}>
       <div className={styles.pageContainer} ref={pageContainerRef}>
+        <Header />
         <div
           className={styles.contentContainer}
           style={{ width: "100%" }}
@@ -56,7 +60,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div ref={bottomRef}>
+        <div className={styles.bottomContainer} ref={bottomRef}>
           <Bottom />
         </div>
       </div>

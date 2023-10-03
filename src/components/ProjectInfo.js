@@ -1,7 +1,14 @@
 import styles from "../css/ProjectInfo.module.css";
 import AnimatedButton from "./AnimatedButton";
 
-const ProjectInfo = ({ title, children, alternate }) => {
+const ProjectInfo = ({
+  title,
+  children,
+  alternate,
+  link1,
+  link2,
+  noButtons = false,
+}) => {
   return (
     <div className={`${styles.container}`}>
       <div
@@ -11,10 +18,13 @@ const ProjectInfo = ({ title, children, alternate }) => {
       </div>
       <div className={styles.infoContainer}>
         {children}
-        <div className={styles.buttonsContainer}>
-          <AnimatedButton text={"Live Site"} />
-          <AnimatedButton text={"Github"} />
-        </div>
+        {/* Conditional rendering */}
+        {!noButtons && (
+          <div className={styles.buttonsContainer}>
+            <AnimatedButton text={"Live Site"} link={link1} />
+            <AnimatedButton text={"Github"} link={link2} />
+          </div>
+        )}
       </div>
     </div>
   );

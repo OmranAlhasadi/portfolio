@@ -6,7 +6,15 @@ import ProjectInfo from "./ProjectInfo";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Project = ({ img, title, children, alternate }) => {
+const Project = ({
+  img,
+  title,
+  children,
+  alternate,
+  link1,
+  link2,
+  noButtons = false,
+}) => {
   const containerRef = useRef(null);
   const shadowRef = useRef(null);
   const infoRef = useRef(null);
@@ -57,7 +65,13 @@ const Project = ({ img, title, children, alternate }) => {
           className={`${styles.info} ${alternate ? styles.alternateInfo : ""}`}
           ref={infoRef}
         >
-          <ProjectInfo title={title} alternate={alternate}>
+          <ProjectInfo
+            title={title}
+            alternate={alternate}
+            link1={link1}
+            link2={link2}
+            noButtons={noButtons}
+          >
             {children}
           </ProjectInfo>
         </div>

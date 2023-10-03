@@ -19,13 +19,13 @@ const Contact = () => {
           placeholder="Email..."
           className={styles.email}
         ></input>
-        <input
-          type="text"
+        <textarea
           placeholder="Message..."
           className={styles.message}
-        ></input>
+        ></textarea>
+
         <div className={styles.buttonWrapper}>
-          <AnimatedButton text={"Send"} />
+          <AnimatedButton text={"Send"} border={true} />
         </div>
       </form>
     </div>

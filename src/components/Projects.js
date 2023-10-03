@@ -9,7 +9,7 @@ import Section from "./Section";
 const Projects = () => {
   return (
     <div className={styles.container}>
-      <Project img={easyGains} title="EasyGains">
+      <Project img={easyGains} title="EasyGains" noButtons={true}>
         <p>
           Growing up, I always had an affinity for everything tech related.
           Jailbreaking my first iPod, installing custom ROMs on my android
@@ -24,7 +24,13 @@ const Projects = () => {
         <Divider />
         <i>Built using Python, Dart and firebase</i>
       </Project>
-      <Project img={etch} title="Etch-a-Sketch" alternate={true}>
+      <Project
+        img={etch}
+        title="Etch-a-Sketch"
+        alternate={true}
+        link1={"https://github.com/OmranAlhasadi"}
+        link2={"https://github.com/OmranAlhasadi"}
+      >
         <p>
           Growing up, I always had an affinity for everything tech related.
           Jailbreaking my first iPod, installing custom ROMs on my android
@@ -37,7 +43,12 @@ const Projects = () => {
           animation is what I do best.
         </p>
       </Project>
-      <Project img={easyGains} title="EasyGains 2">
+      <Project
+        img={easyGains}
+        title="EasyGains 2"
+        link1={"https://github.com/OmranAlhasadi"}
+        link2={"https://github.com/OmranAlhasadi"}
+      >
         <p>
           Growing up, I always had an affinity for everything tech related.
           Jailbreaking my first iPod, installing custom ROMs on my android

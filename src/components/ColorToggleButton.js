@@ -7,6 +7,9 @@ const ColorToggleButton = () => {
   useEffect(() => {
     const root = document.documentElement;
     if (checked) {
+      if (root.classList.contains("partialDark")) {
+        root.classList.remove("partialDark");
+      }
       root.classList.add("dark");
     } else {
       root.classList.remove("dark");

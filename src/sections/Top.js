@@ -10,7 +10,6 @@ import styles from "../css/Top.module.css";
 const Top = () => {
   return (
     <div className={styles.container}>
-      <Header />
       <Hero />
       <Divider />
       <Section num={"01."} title={"About"}>

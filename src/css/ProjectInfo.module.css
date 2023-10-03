@@ -57,9 +57,19 @@ p{
     
 }
 
+:global(.partialDark) .infoContainer > p,
+:global(.partialDark) .title,
+:global(.partialDark) .infoContainer > i {
+    --color-text-primary: #2c2c2c;
+    
+}
 
-
-
+:global(.dark) .infoContainer > p,
+:global(.dark) .title,
+:global(.dark) .infoContainer > i {
+    --color-text-primary: #fff; 
+    
+}
 
 i{
     color: var(--color-text-primary);

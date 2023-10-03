@@ -2,3 +2,11 @@
 .divider {
     --divider-color: var(--color-text-primary);
 }
+
+:global(.partialDark) .divider{
+    --color-text-primary: #2c2c2c;
+}
+
+:global(.dark) .divider{
+    --color-text-primary: #fff;
+}
