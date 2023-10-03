@@ -15,7 +15,7 @@ const Top = () => {
       <Section num={"01."} title={"About"}>
         <p>
           Growing up, I always had an affinity for everything tech related.
-          Jailbreaking my first iPod, installing custom ROMs on my android
+          Jailbreaking my first iPhone, installing custom ROMs on my android
           phones (and nearly bricking them) or modding my gaming consoles were
           some of the things that developed my problem solving skills
         </p>
