@@ -24,12 +24,14 @@ const HomePage = () => {
       trigger: middleRef.current,
       start: "top center",
       end: "bottom center",
-      onEnter: () => contentContainerRef.current.classList.add("dark"),
-      onLeaveBack: () => contentContainerRef.current.classList.remove("dark"),
+      onEnter: () => contentContainerRef.current.classList.add("partialDark"),
+      onLeaveBack: () =>
+        contentContainerRef.current.classList.remove("partialDark"),
     });
 
     gsap.to(contentContainerRef.current, {
-      width: "90%",
+      scaleX: 0.9,
+
       scrollTrigger: {
         trigger: bottomRef.current,
         start: "top bottom",

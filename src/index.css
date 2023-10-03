@@ -51,6 +51,12 @@
   --color-overlay: #242424;
 }
 
+.partialDark {
+  --color-text-primary: #ffffff;
+  --color-bg-main: #242424;
+}
+
+
 
 
 code {

@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    padding-bottom: 12rem;
+    padding-bottom: 4rem;
 }
 
 .contentWrapper{
@@ -38,4 +38,17 @@ body {
 
 .middleContainer {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contentContainer {
+        padding-bottom: 7rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .contentContainer {
+        padding-bottom: 10rem;
+    }
 }

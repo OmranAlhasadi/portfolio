@@ -4,6 +4,8 @@
     width: 100%;
     max-width: 700px;
     transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
+
+    
     
 }
 
@@ -17,6 +19,9 @@
     align-self: flex-start;
     display: inline-block;
     transition: inherit;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
     
 }
 
@@ -35,7 +40,13 @@
     max-width: 100%;
     padding: 2.5rem;
     transition: inherit;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    
 }
+
+
 
 p{
     
@@ -45,6 +56,10 @@ p{
     
     
 }
+
+
+
+
 
 i{
     color: var(--color-text-primary);
@@ -75,6 +90,17 @@ i{
     
     .infoContainer{
         padding: 2rem;
+        
+    }
+
+    p{
+        font-size: 1.1rem;
+        
+        
+    }
+    
+    i{
+        font-size: 1rem;   
     }
 }
 
