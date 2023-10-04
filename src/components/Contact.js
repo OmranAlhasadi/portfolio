@@ -6,8 +6,22 @@ import icons from "devicon";
 const Contact = () => {
   return (
     <div className={styles.container}>
-      <div className={`${styles.icon1} devicon-github-plain`}></div>
-      <div className={`${styles.icon2} devicon-linkedin-plain`}></div>
+      <a
+        className={styles.iconLink1}
+        href="https://github.com/OmranAlhasadi"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className={`${styles.icon1} devicon-github-plain`}></div>
+      </a>
+      <a
+        className={styles.iconLink2}
+        href="https://www.linkedin.com/in/omran-alhasadi-a1765b283/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className={`${styles.icon2} devicon-linkedin-plain`}></div>
+      </a>
       <form action="">
         <input
           type="text"

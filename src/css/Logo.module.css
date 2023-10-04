@@ -1,0 +1,42 @@
+.logo {
+    
+    height: 100%;
+    width: 100%;
+   
+}
+
+.logo a {
+    text-decoration: none; 
+    color: inherit;       
+    display: block;  
+    width: 100%;
+    height: 100%;   
+}
+
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+    
+}
+
+
+@media (min-width: 769px) {
+
+    .logo :global(#outerGroup) {
+        transition: transform 0.3s;
+        transform-origin: center; 
+    }
+    
+    
+    .logo:hover :global(#outerGroup) {
+        transform: rotate(45deg) scale(1.2);
+        
+    }
+    
+
+}
+
+

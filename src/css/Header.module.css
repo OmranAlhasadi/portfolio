@@ -18,6 +18,17 @@
 }
 
 .logo {
-    height: 1px;
-    width: 1px;
+    margin-top: 3rem;
+    height: 5rem;
+    width: 5rem;
+    
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        margin-top: 2rem;
+        height: 4rem;
+        width: 4rem;
+    }
 }
