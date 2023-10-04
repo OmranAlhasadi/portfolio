@@ -7,9 +7,7 @@ const Header = () => {
     <>
       <div className={styles.spacer}></div>
       <div className={styles.container}>
-        <div className={styles.logo}>
-          <Logo />
-        </div>
+        <div className={styles.logo}>{/*<Logo />*/}</div>
         <div className={styles.nav}>
           <ColorToggleButton />
         </div>

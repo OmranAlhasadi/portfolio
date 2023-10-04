@@ -23,6 +23,19 @@
 }
 
 
+:global(.partialDark) svg {
+    --color-text-primary: #fff;
+    
+}
+
+
+:global(.dark) .logo {
+    --color-text-primary: #fff; 
+    
+}
+
+
+
 @media (min-width: 769px) {
 
     .logo :global(#outerGroup) {

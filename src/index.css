@@ -20,6 +20,8 @@
 
   --color-overlay: transparent;
 
+  --color-logo: black;
+
   --pimg-size: 480px;
 
   --narrow: 450px;
@@ -49,11 +51,15 @@
   --color-project-bg: #151515;
 
   --color-overlay: #242424;
+
+  --color-logo: #fff;
 }
 
 .partialDark {
   --color-text-primary: #ffffff;
   --color-bg-main: #242424;
+
+  --color-logo: #fff;
 }
 
 
