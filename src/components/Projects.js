@@ -19,10 +19,10 @@ const Projects = () => {
         link2={"https://github.com/OmranAlhasadi/bubbles"}
       >
         <p>
-          A social media app where you can create posts, upload images, add
+          A social media website where you can create posts, upload images, add
           friends...etc.
         </p>
-        <p>This is a full stack project to showcase my full stack knowledge</p>
+        <p>This is a portfolio project to showcase my fullstack knowledge</p>
         <Divider />
         <i>Built using MERN stack (Mongo, Express, React and Node) </i>
       </Project>
